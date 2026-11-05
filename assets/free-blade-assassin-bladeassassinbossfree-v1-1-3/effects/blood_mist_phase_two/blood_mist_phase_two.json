@@ -1,0 +1,11 @@
+{
+  "name": "blood mist phase two",
+  "frame_size": [
+    320,
+    267
+  ],
+  "frames": 6,
+  "fps": 12,
+  "loop": false,
+  "sheet": "blood_mist_phase_two.png"
+}

@@ -1,0 +1,11 @@
+{
+  "name": "blink arrival phase two",
+  "frame_size": [
+    400,
+    402
+  ],
+  "frames": 6,
+  "fps": 12,
+  "loop": false,
+  "sheet": "blink_arrival_phase_two.png"
+}

@@ -1,0 +1,152 @@
+{
+  "name": "Blade Assassin (Enraged)",
+  "frame_size": [
+    147,
+    128
+  ],
+  "pivot": [
+    72.332,
+    109.562
+  ],
+  "pivot_note": "Pivot is the feet point inside each frame (x, y in pixels).",
+  "directions": [
+    "S",
+    "SE",
+    "E",
+    "NE",
+    "N",
+    "NW",
+    "W",
+    "SW"
+  ],
+  "direction_rows": "Row order top to bottom: S, SE, E, NE, N, NW, W, SW",
+  "animations": {
+    "attack": {
+      "sheet": "sheets/attack.png",
+      "frames_per_direction": 6,
+      "rows": 8,
+      "fps": 8.0,
+      "loop": false
+    },
+    "attack2": {
+      "sheet": "sheets/attack2.png",
+      "frames_per_direction": 6,
+      "rows": 8,
+      "fps": 8.0,
+      "loop": false
+    },
+    "attack3": {
+      "sheet": "sheets/attack3.png",
+      "frames_per_direction": 6,
+      "rows": 8,
+      "fps": 10,
+      "loop": false
+    },
+    "attack4": {
+      "sheet": "sheets/attack4.png",
+      "frames_per_direction": 6,
+      "rows": 8,
+      "fps": 10,
+      "loop": false
+    },
+    "death": {
+      "sheet": "sheets/death.png",
+      "frames_per_direction": 6,
+      "rows": 8,
+      "fps": 24.0,
+      "loop": false
+    },
+    "hurt": {
+      "sheet": "sheets/hurt.png",
+      "frames_per_direction": 6,
+      "rows": 8,
+      "fps": 14.0,
+      "loop": false
+    },
+    "idle": {
+      "sheet": "sheets/idle.png",
+      "frames_per_direction": 4,
+      "rows": 8,
+      "fps": 5.0,
+      "loop": true
+    },
+    "run": {
+      "sheet": "sheets/run.png",
+      "frames_per_direction": 6,
+      "rows": 8,
+      "fps": 11.0,
+      "loop": true
+    },
+    "walk": {
+      "sheet": "sheets/walk.png",
+      "frames_per_direction": 6,
+      "rows": 8,
+      "fps": 7.0,
+      "loop": true
+    },
+    "attack_smooth": {
+      "sheet": "sheets/attack_smooth.png",
+      "frames_per_direction": 12,
+      "rows": 8,
+      "fps": 16.0,
+      "loop": false,
+      "smooth_of": "attack"
+    },
+    "attack2_smooth": {
+      "sheet": "sheets/attack2_smooth.png",
+      "frames_per_direction": 12,
+      "rows": 8,
+      "fps": 16.0,
+      "loop": false,
+      "smooth_of": "attack2"
+    },
+    "attack3_smooth": {
+      "sheet": "sheets/attack3_smooth.png",
+      "frames_per_direction": 12,
+      "rows": 8,
+      "fps": 20,
+      "loop": false,
+      "smooth_of": "attack3"
+    },
+    "attack4_smooth": {
+      "sheet": "sheets/attack4_smooth.png",
+      "frames_per_direction": 12,
+      "rows": 8,
+      "fps": 20,
+      "loop": false,
+      "smooth_of": "attack4"
+    },
+    "hurt_smooth": {
+      "sheet": "sheets/hurt_smooth.png",
+      "frames_per_direction": 12,
+      "rows": 8,
+      "fps": 28.0,
+      "loop": false,
+      "smooth_of": "hurt"
+    },
+    "idle_smooth": {
+      "sheet": "sheets/idle_smooth.png",
+      "frames_per_direction": 8,
+      "rows": 8,
+      "fps": 10.0,
+      "loop": true,
+      "smooth_of": "idle"
+    },
+    "run_smooth": {
+      "sheet": "sheets/run_smooth.png",
+      "frames_per_direction": 12,
+      "rows": 8,
+      "fps": 22.0,
+      "loop": true,
+      "smooth_of": "run"
+    },
+    "walk_smooth": {
+      "sheet": "sheets/walk_smooth.png",
+      "frames_per_direction": 12,
+      "rows": 8,
+      "fps": 14.0,
+      "loop": true,
+      "smooth_of": "walk"
+    }
+  }
+}

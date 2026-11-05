@@ -1,0 +1,11 @@
+{
+  "name": "phase trail phase two",
+  "frame_size": [
+    385,
+    368
+  ],
+  "frames": 6,
+  "fps": 12,
+  "loop": false,
+  "sheet": "phase_trail_phase_two.png"
+}

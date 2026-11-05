@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+    <TextView
+        android:id="@+id/register_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="@string/create_account"
+        android:textColor="#FF2222"
+        android:textSize="26sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/register_subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="@string/register_subtitle"
+        android:textColor="#AAAAAA"
+        android:textSize="12sp" />
+
+    <EditText
+        android:id="@+id/edit_reg_email"
+        android:layout_width="280dp"
+        android:layout_height="44dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/bg_button"
+        android:hint="@string/hint_email"
+        android:inputType="textEmailAddress"
+        android:padding="10dp"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#888888"
+        android:textSize="13sp" />
+
+    <EditText
+        android:id="@+id/edit_reg_password"
+        android:layout_width="280dp"
+        android:layout_height="44dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/bg_button"
+        android:hint="@string/hint_password"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#888888"
+        android:textSize="13sp" />
+
+    <EditText
+        android:id="@+id/edit_reg_confirm_password"
+        android:layout_width="280dp"
+        android:layout_height="44dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/bg_button"
+        android:hint="@string/hint_confirm_password"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#888888"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/register_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="6dp"
+        android:textColor="#FF4444"
+        android:textSize="12sp"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/btn_do_register"
+        android:layout_width="280dp"
+        android:layout_height="42dp"
+        android:layout_marginBottom="6dp"
+        android:background="@drawable/bg_selected"
+        android:text="@string/register_button"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/btn_reg_google_sso"
+        android:layout_width="280dp"
+        android:layout_height="42dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/bg_button"
+        android:text="@string/sign_in_google"
+        android:textColor="#FFD700"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/link_go_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="6dp"
+        android:text="@string/back_to_login"
+        android:textColor="#AAAAAA"
+        android:textSize="13sp" />
+
+    </LinearLayout>
+</ScrollView>

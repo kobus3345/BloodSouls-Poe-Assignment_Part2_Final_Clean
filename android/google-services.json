@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "883714064797",
+    "firebase_url": "https://adnroidapiproject-default-rtdb.firebaseio.com",
+    "project_id": "adnroidapiproject",
+    "storage_bucket": "adnroidapiproject.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:883714064797:android:38c2e35e693761231c6f74",
+        "android_client_info": {
+          "package_name": "com.darkforge.bloodsouls"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "883714064797-1gs109mpfpgkis662v9ee124r6jpklbt.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.darkforge.bloodsouls",
+            "certificate_hash": "1889eae0f117dd1ae5a59abe5fc317bed47b90af"
+          }
+        },
+        {
+          "client_id": "883714064797-4uoj1g7ert6v2f33f3a64vg5b24eohsk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB_gF5lxoonPGo_wcUg62Be0cixo3ePl30"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "883714064797-4uoj1g7ert6v2f33f3a64vg5b24eohsk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

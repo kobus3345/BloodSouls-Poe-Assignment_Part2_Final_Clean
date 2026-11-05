@@ -1,0 +1,11 @@
+{
+  "name": "bone lance impact phase two",
+  "frame_size": [
+    320,
+    222
+  ],
+  "frames": 6,
+  "fps": 12,
+  "loop": false,
+  "sheet": "bone_lance_impact_phase_two.png"
+}

@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:id="@+id/lbl_options"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="@string/menu_options"
+            android:textColor="#FF2222"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/lbl_gore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="@string/gore_intensity"
+            android:textColor="#CCCCCC"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/blood_low"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/bg_button"
+                android:text="LOW"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/blood_medium"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/bg_button"
+                android:text="MED"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/blood_high"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_selected"
+                android:text="HIGH"
+                android:textColor="#FFFFFF" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/lbl_language"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="@string/language"
+            android:textColor="#CCCCCC"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/language_english"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/bg_selected"
+                android:padding="8dp"
+                android:text="ENGLISH"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/language_afrikaans"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/bg_button"
+                android:padding="8dp"
+                android:text="AFRIKAANS"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/language_xhosa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/bg_button"
+                android:padding="8dp"
+                android:text="XHOSA"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/language_tswana"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_button"
+                android:padding="8dp"
+                android:text="TSWANA"
+                android:textColor="#FFFFFF" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/lbl_font_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="@string/font_size"
+            android:textColor="#CCCCCC"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/font_increase"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/bg_button"
+                android:text="+"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/font_decrease"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_selected"
+                android:text="-"
+                android:textColor="#FFFFFF" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/lbl_music"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="@string/music_feature"
+            android:textColor="#CCCCCC"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/music_on"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/bg_button"
+                android:text="ON"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/music_off"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_selected"
+                android:text="OFF"
+                android:textColor="#FFFFFF" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/return_options"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="@string/back"
+            android:textColor="#AAAAAA"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+</ScrollView>

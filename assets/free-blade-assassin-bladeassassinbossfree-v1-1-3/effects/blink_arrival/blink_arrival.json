@@ -1,0 +1,11 @@
+{
+  "name": "blink arrival",
+  "frame_size": [
+    320,
+    520
+  ],
+  "frames": 6,
+  "fps": 12,
+  "loop": false,
+  "sheet": "blink_arrival.png"
+}

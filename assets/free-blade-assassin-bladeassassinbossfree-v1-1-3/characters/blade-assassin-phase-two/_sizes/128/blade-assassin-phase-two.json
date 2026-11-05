@@ -1,0 +1,108 @@
+{
+  "name": "Blade Assassin (Second Form: Unmasked Daywalker)",
+  "frame_size": [
+    166,
+    128
+  ],
+  "pivot": [
+    74.616,
+    122.54
+  ],
+  "pivot_note": "Pivot is the feet point inside each frame (x, y in pixels).",
+  "directions": [
+    "S",
+    "SE",
+    "E",
+    "NE",
+    "N",
+    "NW",
+    "W",
+    "SW"
+  ],
+  "direction_rows": "Row order top to bottom: S, SE, E, NE, N, NW, W, SW",
+  "animations": {
+    "attack": {
+      "sheet": "sheets/attack.png",
+      "frames_per_direction": 12,
+      "rows": 8,
+      "fps": 16.0,
+      "loop": false,
+      "attack_name": "blink strike"
+    },
+    "attack2": {
+      "sheet": "sheets/attack2.png",
+      "frames_per_direction": 12,
+      "rows": 8,
+      "fps": 16.0,
+      "loop": false,
+      "attack_name": "phase rush"
+    },
+    "attack3": {
+      "sheet": "sheets/attack3.png",
+      "frames_per_direction": 12,
+      "rows": 8,
+      "fps": 20.0,
+      "loop": false,
+      "attack_name": "blade slash"
+    },
+    "attack4": {
+      "sheet": "sheets/attack4.png",
+      "frames_per_direction": 12,
+      "rows": 8,
+      "fps": 20.0,
+      "loop": false,
+      "attack_name": "whirlwind"
+    },
+    "attack5": {
+      "sheet": "sheets/attack5.png",
+      "frames_per_direction": 12,
+      "rows": 8,
+      "fps": 16.0,
+      "loop": false,
+      "attack_name": "Blood Mist"
+    },
+    "attack6": {
+      "sheet": "sheets/attack6.png",
+      "frames_per_direction": 12,
+      "rows": 8,
+      "fps": 16.0,
+      "loop": false,
+      "attack_name": "Bone Lance"
+    },
+    "death": {
+      "sheet": "sheets/death.png",
+      "frames_per_direction": 12,
+      "rows": 8,
+      "fps": 48.0,
+      "loop": false
+    },
+    "hurt": {
+      "sheet": "sheets/hurt.png",
+      "frames_per_direction": 12,
+      "rows": 8,
+      "fps": 28.0,
+      "loop": false
+    },
+    "idle": {
+      "sheet": "sheets/idle.png",
+      "frames_per_direction": 12,
+      "rows": 8,
+      "fps": 15.0,
+      "loop": true
+    },
+    "run": {
+      "sheet": "sheets/run.png",
+      "frames_per_direction": 6,
+      "rows": 8,
+      "fps": 11.0,
+      "loop": true
+    },
+    "walk": {
+      "sheet": "sheets/walk.png",
+      "frames_per_direction": 6,
+      "rows": 8,
+      "fps": 7.0,
+      "loop": true
+    }
+  }
+}

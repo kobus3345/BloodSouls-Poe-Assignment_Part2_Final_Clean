@@ -1,0 +1,83 @@
+buildscript {
+  repositories {
+    mavenCentral()
+    gradlePluginPortal()
+    mavenLocal()
+    google()
+    maven { url = 'https://central.sonatype.com/repository/maven-snapshots/' }
+  }
+  dependencies {
+    classpath "com.android.tools.build:gradle:8.9.3"
+    classpath "io.freefair.gradle:lombok-plugin:9.5.0"
+    classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlinVersion"
+    classpath "com.google.gms:google-services:4.4.2"
+  }
+}
+
+allprojects {
+  apply plugin: 'eclipse'
+  apply plugin: 'idea'
+
+  idea {
+    module {
+    }
+  }
+}
+
+configure(subprojects - project(':android')) {
+  apply plugin: 'java-library'
+  apply plugin: 'kotlin'
+  apply plugin: 'io.freefair.lombok'
+  java.sourceCompatibility = 11
+  java.targetCompatibility = 11
+
+  sourceSets.main.kotlin.srcDirs += [ "src/main/java" ]
+
+  tasks.register('generateAssetList') {
+    inputs.dir("${project.rootDir}/assets/")
+    File assetsFolder = new File("${project.rootDir}/assets/")
+    File assetsFile = new File(assetsFolder, "assets.txt")
+    assetsFile.delete()
+
+    fileTree(assetsFolder).collect { assetsFolder.relativePath(it).replace('\\', '/') }.sort().each {
+      assetsFile.append(it + "\n")
+    }
+  }
+  processResources.dependsOn 'generateAssetList'
+
+  compileJava {
+    options.incremental = true
+  }
+  compileKotlin.compilerOptions.jvmTarget.set(org.jetbrains.kotlin.gradle.dsl.JvmTarget.JVM_11)
+  compileTestKotlin.compilerOptions.jvmTarget.set(org.jetbrains.kotlin.gradle.dsl.JvmTarget.JVM_11)
+
+}
+
+project(':android') {
+  tasks.register('generateAssetList') {
+    inputs.dir("${project.rootDir}/assets/")
+    File assetsFolder = new File("${project.rootDir}/assets/")
+    File assetsFile = new File(assetsFolder, "assets.txt")
+    assetsFile.delete()
+
+    fileTree(assetsFolder).collect { assetsFolder.relativePath(it).replace('\\', '/') }.sort().each {
+      assetsFile.append(it + "\n")
+    }
+  }
+  tasks.matching { it.name.startsWith("merge") && it.name.contains("Assets") }.configureEach { assetTask ->
+    assetTask.dependsOn 'generateAssetList'
+  }
+}
+
+subprojects {
+  version = "$projectVersion"
+  ext.appName = 'BloodSouls'
+  repositories {
+    mavenCentral()
+    mavenLocal()
+    maven { url = 'https://central.sonatype.com/repository/maven-snapshots/' }
+    maven { url = 'https://jitpack.io' }
+  }
+}
+
+eclipse.project.name = 'BloodSouls' + '-parent'
